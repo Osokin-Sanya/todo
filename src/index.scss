@@ -1,0 +1,101 @@
+/* Основные стили страницы */
+:root {
+  font-family: Arial;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+}
+
+/* Стили для заголовков */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Стили для кнопок */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 2px 13px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+/* Стили для светлой темы */
+.light-theme {
+  background-color: #242424;
+  color: aliceblue;
+}
+
+.light-theme button {
+  background-color: #000000;
+  color: floralwhite;
+}
+
+/* Стили для пагинации */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.light-theme a {
+  color: floralwhite !important;
+  border-radius: inherit;
+  background-color: #3a3a3a;
+}
+
+.light-theme li {
+  border-color: #ffffff !important;
+}
+
+.light-theme .anticon {
+  color: floralwhite;
+}
+
+.light-theme a span {
+  color: rgba(255, 255, 255, 0.56) !important;
+}
+
+.light-theme {
+  color: #fff;
+}
+
+/* Стили для элементов списка */
+ul {
+  text-align: left;
+  list-style: none;
+  padding-left: 15px;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
+
+/* Стили для header */
+.header {
+  display: flex;
+  align-items: center;
+
+  div:nth-child(2) {
+    width: 67%;
+    text-align: end;
+  }
+}
